@@ -40,46 +40,46 @@ Setup Resources in Azure
 
 Ensure Connectivity between the client and Domain Controller
 
-    5. Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
+     5. Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
    
-    6. Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
+     6. Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
    
-    7. Check back at Client-1 to see the ping succeed
+     7. Check back at Client-1 to see the ping succeed
 
 Install Active Directory
 
-    8. Login to DC-1 and install Active Directory Domain Services
+     8. Login to DC-1 and install Active Directory Domain Services
    
-    9. Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
+     9. Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
    
-   10. Restart and then log back into DC-1 as user: mydomain.com\labuser
+    10. Restart and then log back into DC-1 as user: mydomain.com\labuser
 
 Create an Admin and Normal User Account in AD
 
-   11. In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
+    11. In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
   
-   12. Create a new OU named “_ADMINS”
+    12. Create a new OU named “_ADMINS”
   
-   13. Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”
+    13. Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”
   
-   14. Add jane_admin to the “Domain Admins” Security Group
+    14. Add jane_admin to the “Domain Admins” Security Group
   
-   15. Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
+    15. Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
   
-   16. User jane_admin as your admin account from now on
+    16. User jane_admin as your admin account from now on
 
 
 Join Client-1 to your domain (mydomain.com)
 
-   17. From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
+    17. From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
   
-   18. From the Azure Portal, restart Client-1
+    18. From the Azure Portal, restart Client-1
   
-   19. Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
+    19. Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
   
-   20. Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in ADUC
+    20. Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in ADUC
   
-   21. Create a new OU named “_CLIENTS” and drag Client-1 into there
+    21. Create a new OU named “_CLIENTS” and drag Client-1 into there
 
 
 Setup Remote Desktop for non-administrative users on Client-1
