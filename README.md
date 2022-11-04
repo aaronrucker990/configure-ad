@@ -33,6 +33,7 @@ Setup Resources in Azure
     2. Set Domain Controller’s NIC Private IP address to be static
    
     3. Create the Client VM (Windows 10) named “Client-1”. 
+    
        - Use the same Resource Group and Vnet that was created in Step 1.a
    
     4. Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher
@@ -82,11 +83,16 @@ Join Client-1 to your domain (mydomain.com)
 
 
 Setup Remote Desktop for non-administrative users on Client-1
-Log into Client-1 as mydomain.com\jane_admin and open system properties
-Click “Remote Desktop”
-Allow “domain users” access to remote desktop
-You can now log into Client-1 as a normal, non-administrative user now
-Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
+
+   22. Log into Client-1 as mydomain.com\jane_admin and open system properties
+
+   23. Click “Remote Desktop”
+
+   24. Allow “domain users” access to remote desktop
+ 
+   25. You can now log into Client-1 as a normal, non-administrative user now
+ 
+   26. Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
 
 Create a bunch of additional users and attempt to log into client-1 with one of the users
 Login to DC-1 as jane_admin
