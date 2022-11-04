@@ -84,29 +84,29 @@ Join Client-1 to your domain (mydomain.com)
 
 Setup Remote Desktop for non-administrative users on Client-1
 
-   22. Log into Client-1 as mydomain.com\jane_admin and open system properties
+    22. Log into Client-1 as mydomain.com\jane_admin and open system properties
 
-   23. Click “Remote Desktop”
+    23. Click “Remote Desktop”
 
-   24. Allow “domain users” access to remote desktop
+    24. Allow “domain users” access to remote desktop
  
-   25. You can now log into Client-1 as a normal, non-administrative user now
+    25. You can now log into Client-1 as a normal, non-administrative user now
  
-   26. Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
+    26. Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
 
 Create a bunch of additional users and attempt to log into client-1 with one of the users
 
-   27. Login to DC-1 as jane_admin
+    27. Login to DC-1 as jane_admin
 
-   28. Open PowerShell_ise as an administrator
+    28. Open PowerShell_ise as an administrator
 
-   29. Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+    29. Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
 
-   30. Run the script and observe the accounts being created
+    30. Run the script and observe the accounts being created
  
-   31. When finished, open ADUC and observe the accounts in the appropriate OU
+    31. When finished, open ADUC and observe the accounts in the appropriate OU
 
-   32. attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+    32. attempt to log into Client-1 with one of the accounts (take note of the password in the script)
 
 
 <h2>Deployment and Configuration Steps</h2>
