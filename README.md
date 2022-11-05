@@ -148,7 +148,7 @@ Ensure Connectivity between the client and Domain Controller
 </p>
 <p>
     
-<h2>Summary of Deployment Step 1</h2>
+<h2>Summary of Deployment Step 2</h2>
     
     
 Install Active Directory
