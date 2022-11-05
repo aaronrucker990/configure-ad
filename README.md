@@ -217,29 +217,18 @@ Setup Remote Desktop for non-administrative users on Client-1
 
 <h2>Summary of Deployment Step 4</h2>    
     
-Join Client-1 to your domain (mydomain.com)
+Create a bunch of additional users and attempt to log into client-1 with one of the users
 
-  17. From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
+ 27. Login to DC-1 as jane_admin
 
-  18. From the Azure Portal, restart Client-1
+ 28. Open PowerShell_ise as an administrator
 
-  19. Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
+ 29. Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
 
-  20. Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in ADUC
+ 30. Run the script and observe the accounts being created
 
-  21. Create a new OU named “_CLIENTS” and drag Client-1 into there
+ 31. When finished, open ADUC and observe the accounts in the appropriate OU
 
-Setup Remote Desktop for non-administrative users on Client-1
-
-  22. Log into Client-1 as mydomain.com\jane_admin and open system properties
-
-  23. Click “Remote Desktop”
-
-  24. Allow “domain users” access to remote desktop
-
-  25. You can now log into Client-1 as a normal, non-administrative user now
-
-  26. Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
-
+ 32. attempt to log into Client-1 with one of the accounts (take note of the password in the script)
 
 
