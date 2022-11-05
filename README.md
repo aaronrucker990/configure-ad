@@ -116,7 +116,7 @@ Create a bunch of additional users and attempt to log into client-1 with one of 
 </p>
 <p>
 
-<h2>Summary of Configuration Step 1</h2>
+<h2>Summary of Deployment Step 1</h2>
 
 Setup Resources in Azure
 
