@@ -181,6 +181,8 @@ Create an Admin and Normal User Account in AD
 </p>
 <p>
 
+<h2>Summary of Deployment Step 3</h2>    
+    
 Join Client-1 to your domain (mydomain.com)
 
   17. From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
@@ -207,3 +209,10 @@ Setup Remote Desktop for non-administrative users on Client-1
 
 </p>
 <br />
+
+
+
+
+
+
+
