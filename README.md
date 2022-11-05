@@ -147,8 +147,31 @@ Ensure Connectivity between the client and Domain Controller
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+    
+<h2>Summary of Deployment Step 1</h2>
+    
+    
+Install Active Directory
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ 8. Login to DC-1 and install Active Directory Domain Services
+
+ 9. Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
+
+10. Restart and then log back into DC-1 as user: mydomain.com\labuser
+
+Create an Admin and Normal User Account in AD
+
+11. In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
+
+12. Create a new OU named “_ADMINS”
+
+13. Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”
+
+14. Add jane_admin to the “Domain Admins” Security Group
+
+15. Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
+
+16. User jane_admin as your admin account from now on
 
 </p>
 <br />
