@@ -207,12 +207,13 @@ Setup Remote Desktop for non-administrative users on Client-1
 
   26. Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
 
+
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 
-<h2>Summary of Deployment Step 1</h2>
+<h2>Summary of Deployment Step 4</h2>
 
 Setup Resources in Azure
 
