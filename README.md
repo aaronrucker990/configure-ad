@@ -215,7 +215,7 @@ Setup Remote Desktop for non-administrative users on Client-1
 </p>
 <p>
 
-<h2>Summary of Deployment Step 3</h2>    
+<h2>Summary of Deployment Step 4</h2>    
     
 Join Client-1 to your domain (mydomain.com)
 
