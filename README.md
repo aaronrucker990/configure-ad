@@ -111,7 +111,7 @@ Create a bunch of additional users and attempt to log into client-1 with one of 
 </p>
 <p>
 
-<h2>Summary of Deployment Step 1</h2>
+<h2>Deployment 1</h2>
 
 Setup Resources in Azure
 
@@ -143,7 +143,7 @@ Ensure Connectivity between the client and Domain Controller
 </p>
 <p>
     
-<h2>Summary of Deployment Step 2</h2>
+<h2>Deployment 2</h2>
     
     
 Install Active Directory
@@ -176,7 +176,7 @@ Create an Admin and Normal User Account in AD
 </p>
 <p>
 
-<h2>Summary of Deployment Step 3</h2>    
+<h2>Deployment 3</h2>    
     
 Join Client-1 to your domain (mydomain.com)
 
@@ -210,7 +210,7 @@ Setup Remote Desktop for non-administrative users on Client-1
 </p>
 <p>
 
-<h2>Summary of Deployment Step 4</h2>    
+<h2>Deployment 4</h2>    
     
 Create a bunch of additional users and attempt to log into client-1 with one of the users
 
