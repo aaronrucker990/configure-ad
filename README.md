@@ -27,19 +27,19 @@ Setup Resources in Azure
         
     2. Set Domain Controller’s NIC Private IP address to be static
    
-    3. Create the Client VM (Windows 10) named “Client-1”. 
+        3. Create the Client VM (Windows 10) named “Client-1”. 
     
-       - Use the same Resource Group and Vnet that was created in Step 1.a
+            - Use the same Resource Group and Vnet that was created in Step 1.a
    
     4. Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher
 
-Ensure Connectivity between the client and Domain Controller
+        Ensure Connectivity between the client and Domain Controller
 
-     5. Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
+    5. Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
    
-     6. Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
+    6. Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
    
-     7. Check back at Client-1 to see the ping succeed
+    7. Check back at Client-1 to see the ping succeed
 
 Install Active Directory
 
