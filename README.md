@@ -19,7 +19,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-Setup Resources in Azure
+1. Setup Resources in Azure
 
     1. Create the Domain Controller VM (Windows Server 2022) named “DC-1”
    
@@ -41,7 +41,7 @@ Setup Resources in Azure
    
     7. Check back at Client-1 to see the ping succeed
 
-Install Active Directory
+2. Install Active Directory
 
      8. Login to DC-1 and install Active Directory Domain Services
    
@@ -49,7 +49,7 @@ Install Active Directory
    
     10. Restart and then log back into DC-1 as user: mydomain.com\labuser
 
-Create an Admin and Normal User Account in AD
+3. Create an Admin and Normal User Account in AD
 
     11. In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
   
@@ -64,7 +64,7 @@ Create an Admin and Normal User Account in AD
     16. User jane_admin as your admin account from now on
 
 
-Join Client-1 to your domain (mydomain.com)
+4. Join Client-1 to your domain (mydomain.com)
 
     17. From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
   
@@ -77,7 +77,7 @@ Join Client-1 to your domain (mydomain.com)
     21. Create a new OU named “_CLIENTS” and drag Client-1 into there
 
 
-Setup Remote Desktop for non-administrative users on Client-1
+5. Setup Remote Desktop for non-administrative users on Client-1
 
     22. Log into Client-1 as mydomain.com\jane_admin and open system properties
 
@@ -89,7 +89,7 @@ Setup Remote Desktop for non-administrative users on Client-1
  
     26. Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
 
-Create a bunch of additional users and attempt to log into client-1 with one of the users
+6. Create a bunch of additional users and attempt to log into client-1 with one of the users
 
     27. Login to DC-1 as jane_admin
 
